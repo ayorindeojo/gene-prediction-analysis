@@ -56,26 +56,30 @@ Barrnap was used to identify potential rRNA genes.
 
 ### Shared Gene Predictions
 
-The following genomic regions were predicted by both Prodigal and TIGR-Glimmer:
+Prodigal and TIGR-Glimmer showed substantial agreement, identifying 11 genes with matching or highly similar coordinates.
 
-| Gene    | Coordinates |
-| ------- | ----------- |
-| Gene 1  | 104–301     |
-| Gene 2  | 465–1295    |
-| Gene 3  | 1664–2398   |
-| Gene 4  | 2693–3142   |
-| Gene 5  | 3600–5246   |
-| Gene 6  | 5348–6361   |
-| Gene 7  | 6438–7103   |
-| Gene 8  | 7337–7840   |
-| Gene 9  | 7947–8588   |
-| Gene 10 | 8650–8946   |
-| Gene 11 | 9496–9104   |
-| Gene 12 | 9903–9568   |
+| Gene    | Coordinates                                |
+| ------- | ------------------------------------------ |
+| Gene 1  | 465–1295                                   |
+| Gene 2  | 1664–2398                                  |
+| Gene 3  | 2693–3142                                  |
+| Gene 4  | 3600–5246 (Prodigal) / 3600–5342 (Glimmer) |
+| Gene 5  | 5348–6361                                  |
+| Gene 6  | 6438–7103                                  |
+| Gene 7  | 7337–7840                                  |
+| Gene 8  | 7947–8588                                  |
+| Gene 9  | 8650–8946                                  |
+| Gene 10 | 9104–9496                                  |
+| Gene 11 | 9568–9903                                  |
+
 
 ### Unique Predictions
 
-Prodigal identified a predicted coding sequence at coordinates 3383–3571 that was not predicted by TIGR-Glimmer. Differences in gene prediction algorithms, training models, and threshold parameters likely contributed to this discrepancy.
+Prodigal identified one unique coding sequence at coordinates 3383–3571 that was not predicted by TIGR-Glimmer.
+
+TIGR-Glimmer identified two additional predictions at coordinates 82–237 and 2428–2541 that were not detected by Prodigal.
+
+These differences likely result from variations in the underlying statistical models, training data, and threshold parameters used by each gene prediction algorithm.
 
 ### rRNA Analysis
 
