@@ -56,17 +56,38 @@ Barrnap was used to identify potential rRNA genes.
 
 ### Shared Gene Predictions
 
-Both Prodigal and TIGR-Glimmer identified several genes with highly similar coordinates, indicating strong agreement between prediction methods.
+The following genomic regions were predicted by both Prodigal and TIGR-Glimmer:
+
+| Gene    | Coordinates |
+| ------- | ----------- |
+| Gene 1  | 104–301     |
+| Gene 2  | 465–1295    |
+| Gene 3  | 1664–2398   |
+| Gene 4  | 2693–3142   |
+| Gene 5  | 3600–5246   |
+| Gene 6  | 5348–6361   |
+| Gene 7  | 6438–7103   |
+| Gene 8  | 7337–7840   |
+| Gene 9  | 7947–8588   |
+| Gene 10 | 8650–8946   |
+| Gene 11 | 9496–9104   |
+| Gene 12 | 9903–9568   |
 
 ### Unique Predictions
 
-A small number of predictions differed between tools due to differences in underlying algorithms, gene models, and threshold parameters.
+Prodigal identified a predicted coding sequence at coordinates 3383–3571 that was not predicted by TIGR-Glimmer. Differences in gene prediction algorithms, training models, and threshold parameters likely contributed to this discrepancy.
+
+### rRNA Analysis
+
+Barrnap did not identify any rRNA genes within the selected 10 kb genomic region, indicating that ribosomal RNA genes were not present in this scaffold segment.
 
 ## Discussion
 
-Prodigal and TIGR-Glimmer demonstrated substantial agreement across the analyzed genomic region. Shared predictions provide increased confidence that these regions represent true protein-coding genes. Differences between tools highlight the importance of comparative annotation approaches and manual review when generating high-quality genome annotations.
+Prodigal and TIGR-Glimmer demonstrated a high level of agreement across the analyzed 10 kb region, with both tools predicting 13 coding sequences and sharing the majority of gene coordinates. This agreement increases confidence that the predicted regions represent true protein-coding genes.
 
-The absence of rRNA predictions by Barrnap within the selected 10 kb region was expected, as ribosomal RNA genes are not uniformly distributed throughout bacterial genomes.
+One notable difference was the prediction of a coding sequence at coordinates 3383–3571 by Prodigal that was not identified by TIGR-Glimmer. Such discrepancies are common because gene prediction tools use different statistical models and training approaches to identify open reading frames.
+
+The absence of rRNA predictions from Barrnap was expected because ribosomal RNA genes are not uniformly distributed throughout bacterial genomes and may not occur within a small genomic region. These results highlight the value of using multiple annotation tools and comparing outputs to improve genome annotation accuracy.
 
 ## Skills Demonstrated
 
